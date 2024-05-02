@@ -36,11 +36,43 @@ main > h4{
     padding: 20px;
 }
 
+main > h5{
+    font-size: 16px;
+    font-family: 'Bevellier', sans-serif;
+    font-weight: 400;
+    padding: 4px;
+}
+
 main > p{
     font-size: 20px;
     font-family: 'Bevellier', sans-serif;
     font-weight: 400;
     padding: 20px;
+}
+
+.quizTitle{
+    font-size: 24px;
+    font-family: 'Bevellier', sans-serif;
+    font-weight: 300;
+    padding: 4px;
+}
+
+main > a{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: max-content;
+
+    padding: 8px;
+    border: 4px solid #AF03FF;
+    background-color: #AF03FF;
+    border-radius: 8px;
+
+    font-size: 20px;
+    font-family: 'Bevellier', sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    color: #FFD503;
 }
 
 section{
