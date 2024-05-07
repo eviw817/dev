@@ -1,214 +1,125 @@
-/* Variables */
-:root {
-    --font-bevellier: 'Bevellier', sans-serif;
-
-    --color-white: white;
-    --color-black: black;
-    --color-primary-purple: #AF03FF;
-    --color-primary-yellow: #FFD503;
-
-    --font-weight-300: 300;
-    --font-weight-400: 400;
-    --font-weight-500: 500;
-    --font-weight-600: 600;
-}
-
 nav {
     display: flex;
     justify-content: space-evenly;
-    background-color: var(--color-black);
+    background-color: black;
     margin: 0px;
     padding: 20px
 }
 
-nav>svg {
+nav > svg {
     width: 40px;
     height: 40px;
 }
 
-nav>a {
+nav > a {
     font-size: 32px;
-    color: var(--color-white);
+    color: white;
     text-decoration: none;
-    font-family: var(--font-bevellier);
-    font-weight: var(--font-weight-600);
+    font-family: 'Bevellier', sans-serif;
+    font-weight: 600;
 }
 
 main {
     padding: 40px;
+    height: calc(100vh - 52px - 80px - 40px); 
 }
 
-main>h2 {
+main > h2 {
     font-size: 32px;
-    font-family: var(--font-bevellier);
-    font-weight: var(--font-weight-500);
+    font-family: 'Bevellier', sans-serif;
+    font-weight: 500;
 }
 
-main>h4 {
+main > h4 {
     font-size: 24px;
-    font-family: var(--font-bevellier);
-    font-weight: var(--font-weight-400);
+    font-family: 'Bevellier', sans-serif;
+    font-weight: 400;
     padding: 20px;
+    margin-bottom: 80px;
 }
 
-main>h5 {
+main > h5 {
     font-size: 16px;
-    font-family: var(--font-bevellier);
-    font-weight: var(--font-weight-400);
+    font-family: 'Bevellier', sans-serif;
+    font-weight: 400;
     padding: 4px;
 }
 
-main>p {
+main > p {
     font-size: 20px;
-    font-family: var(--font-bevellier);
-    font-weight: var(--font-weight-400);
+    font-family: 'Bevellier', sans-serif;
+    font-weight: 400;
     padding: 20px;
 }
 
 .quizTitle {
     font-size: 24px;
-    font-family: var(--font-bevellier);
-    font-weight: var(--font-weight-300);
+    font-family: 'Bevellier', sans-serif;
+    font-weight: 300;
     padding: 4px;
 }
 
-main>a {
+main > a {    
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: max-content;
 
     padding: 8px;
-    border: 4px solid var(--color-primary-purple);
-    background-color: var(--color-primary-purple);
+    border: 4px solid #AF03FF;
+    background-color: #AF03FF;
     border-radius: 8px;
 
     font-size: 20px;
-    font-family: var(--font-bevellier);
-    font-weight: var(--font-weight-500);
+    font-family: 'Bevellier', sans-serif;
+    font-weight: 500;
     text-decoration: none;
-    color: var(--color-primary-yellow);
+    color: #FFD503;
 }
 
 section {
     margin-left: 20px;
 }
 
-section>a {
+section > a {
     padding: 8px;
     text-decoration: none;
 }
 
-a>h3 {
+a > h3 {
     padding-bottom: 4px;
     font-size: 24px;
-    font-family: var(--font-bevellier);
-    font-weight: var(--font-weight-400);
-    color: var(--color-primary-purple);
+    font-family: 'Bevellier', sans-serif;
+    font-weight: 400;
+    color: #AF03FF;
 }
 
-a>p {
+a > p {
     font-size: 16px;
-    font-family: var(--font-bevellier);
-    font-weight: var(--font-weight-400);
-    color: var(--color-primary-yellow);
+    font-family: 'Bevellier', sans-serif;
+    font-weight: 400;
+    color: #FFD503;
 }
 
 footer {
     position: fixed;
     bottom: 0;
-    right: 0;
-    width: 1444px;
-    height: 12px;
+    left: 0;
+    width: 100%;
+    height: 20px;
 
     display: flex;
     justify-content: space-evenly;
-    background-color: var(--color-black);
+    align-items: center;
+    background-color: black;
     margin: 0px;
     padding: 20px;
 }
 
-footer>h4 {
+footer > h4 {
     font-size: 16px;
-    color: var(--color-white);
+    color: white;
     text-decoration: none;
-    font-family: var(--font-bevellier);
-    font-weight: var(--font-weight-300);
-}
-
-/* challenge 1 */
-
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-button {
-    margin: 10px;
-    font-weight: var(--font-weight-500);
-}
-
-.question {
-    text-align: center;
-    font-size: 35px;
-    margin-bottom: 30px;
-}
-
-.answerButton,
-.nextButton {
-    display: block;
-    margin: 0 50px;
-    width: 200px;
-    height: 50px;
-    font-size: 18px;
-    padding: 10px 20px;
-    border-radius: 20px;
-    background-color: var(--color-primary-yellow);
-    color: var(--color-primary-purple);
-}
-
-.result {
-    text-align: center;
-    font-size: 20px;
-    margin-bottom: 10px;
-
-}
-
-.speakQuestionButton {
-    margin-bottom: 30px;
-    border: none;
-    display: block;
-
-    width: 200px;
-    height: 50px;
-    font-size: 18px;
-    padding: 10px 20px;
-    border-radius: 20px;
-    background-color: var(--color-primary-yellow);
-    color: var(--color-primary-purple);
-
-}
-
-.nextButton {
-    margin-top: 20px;
-}
-
-.link {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: max-content;
-
-    padding: 8px;
-    border: 4px solid var(--color-primary-purple);
-    background-color: var(--color-primary-purple);
-    border-radius: 8px;
-
-    font-size: 20px;
-    font-family: var(--font-bevellier);
-    font-weight: var(--font-weight-500);
-    text-decoration: none;
-    color: var(--color-primary-yellow);
+    font-family: 'Bevellier', sans-serif;
+    font-weight: 300;
 }
