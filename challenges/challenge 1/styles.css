@@ -1,22 +1,62 @@
-body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-}
-
-.quiz-container {
-    max-width: 600px;
-    margin: 50px auto;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-li {
-    margin: 10px 0;
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: black;
+  font-family: 'Bevellier', sans-serif;
 }
 
 button {
-    margin-top: 10px;
+  margin: 10px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+}
+
+.question {
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+
+.answerButton, .nextButton {
+  display: block;
+  margin: 0 50px;
+  width: 200px;
+  height: 50px;
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: aquamarine;
+  color: darkblue;
+}
+
+.result {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 10px;
+
+}
+
+.speakQuestionButton {
+  margin-bottom: 30px;
+  border: none;
+  display: block;
+
+  width: 200px;
+  height: 50px;
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: aquamarine;
+  color: darkblue;
+
+}
+
+.nextButton {
+  margin-top: 20px;
 }

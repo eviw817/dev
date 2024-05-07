@@ -1,22 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Voice Quiz App</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="../../assets/css/reset.css">
+  <link rel="stylesheet" href="../../assets/css/style.css">
+  <title>Voice Quiz App</title>
+
 </head>
+
 <body>
-    
-    <div class="quiz-container">
-        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M480-400q-50 0-85-35t-35-85v-240q0-50 35-85t85-35q50 0 85 35t35 85v240q0 50-35 85t-85 35Zm0-240Zm-40 520v-123q-104-14-172-93t-68-184h80q0 83 58.5 141.5T480-320q83 0 141.5-58.5T680-520h80q0 105-68 184t-172 93v123h-80Zm40-360q17 0 28.5-11.5T520-520v-240q0-17-11.5-28.5T480-800q-17 0-28.5 11.5T440-760v240q0 17 11.5 28.5T480-480Z"/></svg>
-        <h1 id="question"></h1>
-        <ul id="answers"></ul>
-        <input type="text" id="user-answer" placeholder="Speak your answer">
-        <button id="submit-btn">Submit Answer</button>
-        <p id="feedback"></p>
+  <nav class="nav">
+    <svg xmlns="http://www.w3.org/2000/svg" width="88" height="88" viewBox="0 0 88 88" fill="none">
+      <path d="M64 6.45399H26C24.8954 6.45399 24 7.34943 24 8.45399V81.5092C24 82.6138 24.8954 83.5092 26 83.5092H44"
+        stroke="#AF03FF" stroke-width="5" />
+      <path d="M24 43.7546H44" stroke="url(#paint0_linear_7_5)" stroke-width="5" />
+      <path d="M64 4V12.3436L44 43.7546C54.1268 75.9548 58.4987 83.9613 64 84" stroke="#FFD503" stroke-width="5" />
+      <defs>
+        <linearGradient id="paint0_linear_7_5" x1="24" y1="44.2546" x2="44" y2="44.2546" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#AF03FF" />
+          <stop offset="1" stop-color="#FFD503" />
+        </linearGradient>
+      </defs>
+    </svg>
     </div>
-    <script src="script.js"></script>
+    <a href="../../index.html">Home</a>
+    <a href="../../info.html">Info assignment</a>
+  </nav>
+
+  <main>
+    <h2>Speech Recognition Quiz</h1>
+    <h5 class="question">What is 4 + 4?</h5>
+    <div class="result"></div>
+    <button class="speakQuestionButton">Listen to the question</button>
+    <button class="answerButton">Say your answer</button>
+    <button class="nextButton" style="display:none;">Next question😀</button>
+  </main>
+
+  <a class="link" href="../../infoChallenges/challenge1.html">Go back to this challenge's information page.</a>
+
+  <script defer src="main.js"></script>
 </body>
+
 </html>
