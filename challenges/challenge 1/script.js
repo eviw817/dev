@@ -1,22 +1,25 @@
 const questions  = [
-    { question: "What is 4 + 4?", answer: "eight" },
-    { question: "How much liters should you drink a day?", answer: "two" },
-    { question: "Where in Europa is Disneyland?", answer: "Paris" },
-    { question: "What is the capital of Belgium", answer: "Brussels" },
+    { question: "What is 4 + 4?", answers: ["eight", "8"] },
+    { question: "How many liters of water should you drink every day?", answers: ["two", "2"] },
+    { question: "What is the capital of England?", answers: ["London"] },
+    { question: "How high is the Eifeltower in meters?", answers: ["321", "threehundred twenty one"] },
 ];
 
 let currentQuestionIndex = 0;
 
-const questionElement = document.getElementById("question");
-const resultElement = document.getElementById("result");
-const speakQuestionButton = document.getElementById("speakQuestionButton");
-const answerButton = document.getElementById("answerButton");
-const nextButton = document.getElementById("nextButton");
+/* Selectors */
+const questionEl = document.querySelector(".question");
+const resultEl = document.querySelector(".result");
+const speakQuestionBtn = document.querySelector(".speakQuestionButton");
+const answerBtn = document.querySelector(".answerButton");
+const nextBtn = document.querySelector(".nextButton");
 
+/* Voice Recognition option */
 const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 const recognition = new SpeechRecognition();
 recognition.lang = "en-EN";
 
+/* Speech Synthesis option */
 const synth = window.speechSynthesis;
 let utterance = new SpeechSynthesisUtterance();
 utterance.lang = "en-EN";
@@ -28,56 +31,47 @@ function speakQuestion(questionText) {
     synth.speak(utterance);
 }
 
-speakQuestionButton.addEventListener("click", function() {
+speakQuestionBtn.addEventListener("click", function() {
     speakQuestion(questions[currentQuestionIndex].question);
-    answerButton.disabled = false;
+    answerBtn.disabled = false;
 });
 
-answerButton.addEventListener("click", function() {
+answerBtn.addEventListener("click", function() {
     recognition.start();
 });
 
 recognition.onresult = function(event) {
     const answer = event.results[0][0].transcript.trim().toLowerCase();
-    const correctAnswer = questions[currentQuestionIndex].answer.toLowerCase();
-    if (answer === correctAnswer) {
-        resultElement.textContent = "That's right!";
-        resultElement.style.color = "white";
-        resultElement.style.fontSize = "40px";
-        nextButton.style.display = "inline-block";
-        speakQuestionButton.disabled = "none";
-        answerButton.disabled = "none";
+    console.log(`I got something, I heard ${answer}`)
+    const correctAnswers = questions[currentQuestionIndex].answers.map(anwser => answer.toLowerCase());
+    if (correctAnswers.includes(answer)) {
+        nextBtn.style.display = "inline-block";
+        speakQuestionBtn.disabled = "none";
+        answerBtn.disabled = "none";
     } else {
-        resultElement.textContent = "Wrong! Try again.";
-        resultElement.style.color = "black";
-        resultElement.style.fontSize = "40px";
-        nextButton.style.display = "none";
-        answerButton.disabled = false; // Enable answer button again for retry
+        nextBtn.style.display = "none";
+        answerBtn.disabled = false; // Enable answer button again for retry
     }
 }
 
-answerButton.addEventListener("click", function() {
-    recognition.start();
-});
-
-nextButton.addEventListener("click", function() {
-    resultElement.textContent = "";
+nextBtn.addEventListener("click", function() {
+    resultEl.textContent = "";
     currentQuestionIndex++;
     if (currentQuestionIndex < questions.length) {
-        questionElement.textContent = questions[currentQuestionIndex].question;
-        speakQuestionButton.disabled = false;
-        answerButton.disabled = true;
-        nextButton.style.display = "none";
+        questionEl.textContent = questions[currentQuestionIndex].question;
+        speakQuestionBtn.disabled = false;
+        answerBtn.disabled = true;
+        nextBtn.style.display = "none";
     } else {
-        questionElement.textContent = "Well Done! The quiz is over.";
-        questionElement.style.color = "#117bd5";
-        speakQuestionButton.disabled = true;
-        answerButton.disabled = true;
-        nextButton.style.display = "none";
+        questionEl.textContent = "Well Done! The quiz is over.";
+        questionEl.style.color = "#AF03FF";
+        speakQuestionBtn.disabled = true;
+        answerBtn.disabled = true;
+        nextBtn.style.display = "none";
     }
 });
 
 // Start with the first question
-questionElement.textContent = questions[currentQuestionIndex].question;
-speakQuestionButton.disabled = false;
-answerButton.disabled = true;
+questionEl.textContent = questions[currentQuestionIndex].question;
+speakQuestionBtn.disabled = false;
+answerBtn.disabled = true;
