@@ -34,8 +34,7 @@ main > h4 {
     font-size: 24px;
     font-family: 'Bevellier', sans-serif;
     font-weight: 400;
-    padding: 20px;
-    margin-bottom: 80px;
+    padding: 12px;
 }
 
 main > h5 {
@@ -100,6 +99,28 @@ a > p {
     font-family: 'Bevellier', sans-serif;
     font-weight: 400;
     color: #FFD503;
+}
+
+.ol{
+    font-size: 16px;
+    list-style-type: lower-alpha;
+    font-family: 'Bevellier', sans-serif;
+    font-weight: 300;
+    
+    margin-left: 60px;
+    margin-bottom: 60px
+}
+
+.ul{
+    font-size: 16px;
+    list-style-type: circle;
+    font-family: 'Bevellier', sans-serif;
+    font-weight: 300;
+    padding-left: 20px;
+}
+
+.ol > li, .ul > li{
+    padding: 4px;
 }
 
 footer {
