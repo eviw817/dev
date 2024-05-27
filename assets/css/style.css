@@ -37,21 +37,21 @@ main > h2 {
 main > h4 {
     font-size: 28px;
     font-family: "Bevellier", sans-serif;
-    font-weight: 400;
+    font-weight: 500;
     padding: 12px;
 }
 
 main > h5 {
     font-size: 20px;
     font-family: "Bevellier", sans-serif;
-    font-weight: 400;
+    font-weight: 500;
     padding: 4px;
 }
 
 main > p {
     font-size: 24px;
     font-family: "Bevellier", sans-serif;
-    font-weight: 400;
+    font-weight: 500;
     padding: 20px;
 }
 
@@ -98,34 +98,34 @@ section > a {
 
 a > h3 {
     padding-bottom: 4px;
-    font-size: 24px;
+    font-size: 28px;
     font-family: "Bevellier", sans-serif;
-    font-weight: 400;
+    font-weight: 500;
     color: #AF03FF;
 }
 
 a > p {
-    font-size: 16px;
+    font-size: 20px;
     font-family: "Bevellier", sans-serif;
     font-weight: 400;
     color: #FFD503;
 }
 
 .ol{
-    font-size: 16px;
+    font-size: 20px;
     list-style-type: lower-alpha;
     font-family: "Bevellier", sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     
     margin-left: 60px;
     margin-bottom: 60px
 }
 
 .ul{
-    font-size: 16px;
+    font-size: 20px;
     list-style-type: circle;
     font-family: "Bevellier", sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     padding-left: 20px;
 }
 
