@@ -71,7 +71,7 @@ function drawFingers() {
   rectMode(CORNERS);
   noStroke();
   fill(255, 213, 3);
-  if (predictions[0] && predictions[0].hasOwnProperty('annotations')) {
+  if (predictions[0] && predictions[0].hasOwnProperty("annotations")) {
     let index1 = predictions[0].annotations.indexFinger[0];
     let index2 = predictions[0].annotations.indexFinger[1];
     let index3 = predictions[0].annotations.indexFinger[2];

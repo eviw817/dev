@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>What's in the picture?</title>
+    <title>Heart Game</title>
     <link rel="stylesheet" href="../../assets/css/reset.css">
     <link rel="stylesheet" href="../../assets/css/style.css">
-    <link rel="stylesheet" href="styleC3.css">
+    <link rel="stylesheet" href="styleC4.css">
 </head>
 <body>
-
     <nav class="nav">
         <svg xmlns="http://www.w3.org/2000/svg" width="88" height="88" viewBox="0 0 88 88" fill="none">
           <path d="M64 6.45399H26C24.8954 6.45399 24 7.34943 24 8.45399V81.5092C24 82.6138 24.8954 83.5092 26 83.5092H44"
@@ -27,24 +26,16 @@
         <a href="../../index.html">Home</a>
         <a href="../../info.html">Info assignment</a>
     </nav>
-    <main>
-        <h1>Whats in the picture?</h1>
-        <section>
-            <div class="webcam-container">
-                <video class="video" autoplay playsinline width="640" height="480"></video>
-                <canvas class="canvas" id="display-pic"></canvas>
-            </div>
-            <div class="answer">
-                <button class="button">Capture</button>
-                <div class="result"></div>
-            </div>
-        </section>
-        <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet"></script>
-        <script src="https://cdn.jsdelivr.net/npm/webcam-easy/dist/webcam-easy.min.js"></script>
-        <script src="script.js"></script>
 
-        <a class="link" href="../../infoChallenges/challenge3.html">Go back to this challenge's information page.</a>
+    <main>
+        <h1>Catch the hearts!</h1>
+        <h2>Catch 10 hearts!</h2>
+        <div class="game">
+            <canvas class="canvas"></canvas>
+        </div>
+        <script src="script.js"></script>
     </main>
+    
+    <a class="link" href="../../infoChallenges/challenge4.html">Go back to this challenge's information page.</a>
 </body>
 </html>
