@@ -1,0 +1,85 @@
+#map{
+    /* These values always need to be set, otherwise you won't see the map */
+    width: 40vw;
+    height: 40vw;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    height: 77vh;
+}
+
+.qa {
+    flex-grow: 1;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+    font-size: 20px;
+    font-family: "Bevellier", sans-serif;
+    font-weight: 400;
+}
+
+form {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.result-box{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+}
+
+.game-over{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+
+}
+.game-over > p{
+    font-size: 40px;
+    font-family: "Bevellier", sans-serif;
+    font-weight: 600;
+    color: #AF03FF;
+}
+.submit, .next, .restart{
+    margin-top: 8px;
+    padding: 8px;
+    border: 4px solid #FFD503;
+    background-color: #FFD503;
+    border-radius: 8px;
+
+    font-size: 20px;
+    font-family: "Bevellier", sans-serif;
+    font-weight: 500;
+}
+
+.submit:hover, .next:hover, .restart:hover{
+    color: #AF03FF;
+}
+
+.link {    
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: max-content;
+
+    padding: 8px;
+    border: 4px solid #AF03FF;
+    background-color: #AF03FF;
+    border-radius: 8px;
+
+    font-size: 20px;
+    font-family: "Bevellier", sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    color: #FFD503;
+}

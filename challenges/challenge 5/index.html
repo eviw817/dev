@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geolocation game</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <link rel="stylesheet" href="../../assets/css/reset.css">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="styleC5.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+</head>
+
+<body>
+
+    <nav class="nav">
+        <svg xmlns="http://www.w3.org/2000/svg" width="88" height="88" viewBox="0 0 88 88" fill="none">
+          <path d="M64 6.45399H26C24.8954 6.45399 24 7.34943 24 8.45399V81.5092C24 82.6138 24.8954 83.5092 26 83.5092H44"
+            stroke="#AF03FF" stroke-width="5" />
+          <path d="M24 43.7546H44" stroke="url(#paint0_linear_7_5)" stroke-width="5" />
+          <path d="M64 4V12.3436L44 43.7546C54.1268 75.9548 58.4987 83.9613 64 84" stroke="#FFD503" stroke-width="5" />
+          <defs>
+            <linearGradient id="paint0_linear_7_5" x1="24" y1="44.2546" x2="44" y2="44.2546" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#AF03FF" />
+              <stop offset="1" stop-color="#FFD503" />
+            </linearGradient>
+          </defs>
+        </svg>
+        </div>
+        <a href="../../index.html">Home</a>
+        <a href="../../info.html">Info assignment</a>
+    </nav>
+
+    <main>
+        <div class="container">
+            <div id="map"></div>
+            <div class="qa">
+                <form>
+                    <p class="question">Here is an sample question</p>
+                    <label for="anwser"> Distance:
+                        <input type="number"/>
+                    </label>
+                    <input class="submit" type="submit" />
+                </form>
+                <div class="result-box">
+                    <p class="result">Potential result</p>
+                    <button class="next">Next</button>
+                </div>
+                <div class="game-over">
+                    <p>Game Over</p>
+                    <button class="restart">Restart</button>
+                </div>
+            </div>
+            <a class="link" href="../../infoChallenges/challenge5.html">Go back to this challenge's information page.</a>
+            <script src="script.js"></script>
+        </div>
+    </main>
+</body>
+</html>
