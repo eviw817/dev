@@ -29,27 +29,27 @@ main {
 }
 
 main > h2 {
-    font-size: 32px;
+    font-size: 36px;
     font-family: "Bevellier", sans-serif;
     font-weight: 500;
 }
 
 main > h4 {
-    font-size: 24px;
+    font-size: 28px;
     font-family: "Bevellier", sans-serif;
     font-weight: 400;
     padding: 12px;
 }
 
 main > h5 {
-    font-size: 16px;
+    font-size: 20px;
     font-family: "Bevellier", sans-serif;
     font-weight: 400;
     padding: 4px;
 }
 
 main > p {
-    font-size: 20px;
+    font-size: 24px;
     font-family: "Bevellier", sans-serif;
     font-weight: 400;
     padding: 20px;
@@ -73,7 +73,7 @@ main > a {
     background-color: #AF03FF;
     border-radius: 8px;
 
-    font-size: 20px;
+    font-size: 24px;
     font-family: "Bevellier", sans-serif;
     font-weight: 500;
     text-decoration: none;
